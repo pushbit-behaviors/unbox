@@ -1,0 +1,20 @@
+kind: unbox
+name: Unbox
+description: "Runs once for each repository when you subscribe to read its language, framework and setup as well as suggest common workflow improvements."
+discovers: setup problem
+checkout: full
+author: 
+  name: Tom Moor
+  email: tom.moor@gmail.com
+repository:
+  type: git
+  url: https://github.com/pushbit-behaviors/unbox
+active: true
+triggers:
+  - setup
+actions:
+  - message
+keywords:
+  - setup
+  - start
+  - ci
