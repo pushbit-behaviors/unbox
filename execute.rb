@@ -4,7 +4,7 @@ require 'faraday'
 require 'json'
 require 'octokit'
 
-repo = Rugged::Repository.new('.')
+repo = Rugged::Repository.new('./code')
 project = Linguist::Repository.new(repo, repo.head.target_id)
 
 conn = Faraday.new(:url => ENV.fetch("APP_URL")) do |config|
