@@ -18,3 +18,7 @@ keywords:
   - setup
   - start
   - ci
+settings:
+  test:
+    type: string
+    label: "This is a test setting"
